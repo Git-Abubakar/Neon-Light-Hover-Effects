@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #10141a;
+}
+
+.box {
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+
+.box .indonesiaFlag-red {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background: #550E19;
+    transition: .5s;
+    
+}
+
+.box:hover .indonesiaFlag-red {
+    background: #f70019;
+    box-shadow: 0 0 5px #f70019;
+}
+
+.box .indonesiaFlag-white {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: #55585c;
+    transition: .5s;
+    
+}
+
+.box:hover .indonesiaFlag-white {
+    background: #f9f9f9;
+    box-shadow: 0 0 5px #f9f9f9;
+}
+
+.box .red-light {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background: #f70019;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.box:hover .red-light {
+    box-shadow: 0 0 5px #f70019, 0 0 25px #f70019, 0 0 50px #f70019, 0 0 100px #f70019;
+}
+
+.box .white-light {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: #f9f9f9;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.box:hover .white-light {
+    box-shadow: 0 0 5px #f9f9f9, 0 0 25px #f9f9f9, 0 0 50px #f9f9f9, 0 0 100px #f9f9f9;
+} 
